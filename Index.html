@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعمنا اللذيذ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>مطعمنا اللذيذ</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#menu">قائمة الطعام</a></li>
+                <li><a href="#about">عن المطعم</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>أطيب المأكولات بأجود المكونات</h2>
+            <p>استمتع بتجربة فريدة من الأطباق الشهية المعدة بأيدي خبراء الطهي</p>
+            <a href="#menu" class="btn">تصفح القائمة</a>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2 class="section-title">قائمة الطعام</h2>
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="all">الكل</button>
+            <button class="category-btn" data-category="main">الوجبات الرئيسية</button>
+            <button class="category-btn" data-category="appetizer">المقبلات</button>
+            <button class="category-btn" data-category="dessert">الحلويات</button>
+            <button class="category-btn" data-category="drinks">المشروبات</button>
+        </div>
+        <div class="menu-items" id="menu-items">
+            <!-- سيتم إضافة العناصر عبر JavaScript -->
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2 class="section-title">عن المطعم</h2>
+            <p>مطعمنا اللذيذ تأسس عام 2010 بهدف تقديم أطيب المأكولات بأجود المكونات. نفتخر بكوننا نستخدم مكونات طازجة ومحلية ونقدم تشكيلة واسعة من الأطباق التقليدية والعصرية.</p>
+            <p>طاقمنا من الطهاة المحترفين يعملون بجد لتقديم تجربة طعام لا تنسى لكل زائر.</p>
+        </div>
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="صورة المطعم الداخلية">
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">اتصل بنا</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>معلومات التواصل</h3>
+                <p><i class="fas fa-map-marker-alt"></i> العنوان: شارع المطاعم، المدينة</p>
+                <p><i class="fas fa-phone"></i> الهاتف: 0123456789</p>
+                <p><i class="fas fa-envelope"></i> البريد الإلكتروني: info@matamna.com</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="اسمك" required>
+                <input type="email" placeholder="بريدك الإلكتروني" required>
+                <input type="tel" placeholder="هاتفك">
+                <textarea placeholder="رسالتك" required></textarea>
+                <button type="submit" class="btn">إرسال</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 مطعمنا اللذيذ. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+          </html>
