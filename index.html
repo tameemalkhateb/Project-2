@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم النخيل</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>مطعم النخيل</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#menu">قائمة الطعام</a></li>
+                <li><a href="#about">عن المطعم</a></li>
+                <li><a href="#reservation">الحجوزات</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+            <div class="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>أطيب المأكولات الشرقية</h2>
+            <p>تجربة فريدة من الأطباق الشهية المعدة بأيدي خبراء الطهي</p>
+            <a href="#reservation" class="btn">احجز طاولتك</a>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2 class="section-title">قائمة الطعام</h2>
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="all">الكل</button>
+            <button class="category-btn" data-category="starters">المقبلات</button>
+            <button class="category-btn" data-category="main">الأطباق الرئيسية</button>
+            <button class="category-btn" data-category="desserts">الحلويات</button>
+            <button class="category-btn" data-category="drinks">المشروبات</button>
+        </div>
+        <div class="menu-items">
+            <!-- سيتم إضافة العناصر عبر JavaScript -->
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2 class="section-title">عن مطعمنا</h2>
+            <p>تأسس مطعم النخيل عام 2005، ونحن نقدم أطيب المأكولات الشرقية والأوروبية بأجواء عائلية مميزة. نستخدم أفضل المكونات الطازجة ونحرص على تقديم خدمة مميزة لضيوفنا.</p>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-utensils"></i>
+                    <h3>أطباق مميزة</h3>
+                    <p>أطباقنا تحضر يومياً بمكونات طازجة</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-award"></i>
+                    <h3>خبرة طويلة</h3>
+                    <p>أكثر من 15 عاماً في عالم المطاعم</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-heart"></i>
+                    <h3>رضا الزبائن</h3>
+                    <p>أولوياتنا هي راحة ورضا زبائننا</p>
+                </div>
+            </div>
+        </div>
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="صورة المطعم الداخلية">
+        </div>
+    </section>
+
+    <section id="reservation" class="reservation-section">
+        <h2 class="section-title">حجز طاولة</h2>
+        <form id="reservation-form">
+            <div class="form-group">
+                <label for="name">الاسم الكامل</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">رقم الهاتف</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" id="email">
+            </div>
+            <div class="form-group">
+                <label for="date">التاريخ</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">الوقت</label>
+                <input type="time" id="time" required>
+            </div>
+            <div class="form-group">
+                <label for="guests">عدد الأشخاص</label>
+                <select id="guests" required>
+                    <option value="1">1 شخص</option>
+                    <option value="2">2 أشخاص</option>
+                    <option value="3">3 أشخاص</option>
+                    <option value="4">4 أشخاص</option>
+                    <option value="5">5 أشخاص</option>
+                    <option value="6">6 أشخاص</option>
+                    <option value="7">7 أشخاص</option>
+                    <option value="8+">8+ أشخاص</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="notes">ملاحظات إضافية</label>
+                <textarea id="notes" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn">تأكيد الحجز</button>
+        </form>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">اتصل بنا</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>شارع الملك فهد، الرياض، المملكة العربية السعودية</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+966 11 123 4567</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@alnakhil.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <p>الأحد - الخميس: 12:00 ظهراً - 12:00 منتصف الليل<br>
+                    الجمعة - السبت: 1:00 ظهراً - 1:00 منتصف الليل</p>
+                </div>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                </div>
+            </div>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.735988055827!2d46.67291131500015!3d24.81383858407683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2ee3e9c4d8e6cd%3A0xe3c6525f5e0a1b9a!2sKing%20Fahd%20Rd%2C%20Riyadh%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>مطعم النخيل</h3>
+                <p>أطيب المأكولات وأجمل الذكريات</p>
+            </div>
+            <div class="footer-section">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#menu">قائمة الطعام</a></li>
+                    <li><a href="#reservation">الحجوزات</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>اشترك في نشرتنا</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="بريدك الإلكتروني">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 مطعم النخيل. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
